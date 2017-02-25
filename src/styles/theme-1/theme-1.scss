@@ -1,0 +1,126 @@
+
+// fontello fonts
+@import '../../resources/fonts/css/fontello.css';
+@import '../../resources/fonts/css/animation.css';
+
+// TODO use bootstrap scss files
+@import './bootstrap.css';
+
+@import './flag.scss';
+@import './signed-in-page.scss';
+@import './sideMenu.scss';
+@import './header.scss';
+@import './home.scss';
+@import './home-menu.scss';
+@import './home-contact-form.scss';
+@import './account-page.scss';
+@import './messages-page.scss';
+@import './test-page.scss';
+@import './notifications-page.scss';
+@import './conversations.scss';
+@import './messages.scss';
+@import './add-bot-page.scss';
+@import './modal-box-1.scss';
+@import './sign-in.scss';
+@import './sign-up.scss';
+@import './verify-registration.scss';
+@import './contacts-page.scss';
+@import './form.scss';
+@import './feeds-page.scss';
+@import './terms-of-use-page.scss';
+@import './privacy-page.scss';
+@import './users-page';
+@import './cookie-consent.scss';
+@import './bot-settings-page.scss';
+@import './polls-page';
+@import './tracking-page';
+@import './webchat';
+
+body, html {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: #eee;
+    min-height: 100vh;
+}
+
+// html {
+//     box-sizing: border-box;
+// }
+//
+*, *:before, *:after {
+//     box-sizing: inherit;
+    letter-spacing: 2px;
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5 {
+    color: #666;
+    font-weight: normal;
+    text-align: center;
+    font-weight: 300;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+h5 {
+    font-size: 17px;
+}
+
+#reactUI {
+    min-height: 100vh;
+}
+
+[class^="icon-"]:before, [class*=" icon-"]:before {
+    letter-spacing: 0;
+}
+
+.glyphicon:before {
+    letter-spacing: 0;
+}
+
+// Animate bootstrap
+.dropdown-menu {
+    display: block;
+    visibility: hidden;
+}
+.open > .dropdown-menu {
+    visibility: visible;;
+    animation-name: flipInX;
+    animation-duration: .4s;
+    animation-fill-mode: both;
+}
+
+@keyframes flipInX {
+    0% {
+        transform:perspective(400px) rotateX(90deg);
+        opacity:0;
+    }
+    40% {
+        transform:perspective(400px) rotateX(-10deg);
+    }
+    70% {
+        transform:perspective(400px) rotateX(10deg);
+    }
+    100% {
+        transform:perspective(400px) rotateX(0deg);
+        opacity:1;
+    }
+}
+
+button {
+    transition: all 0.2s ease-in-out;
+}
+
+#app-comp {
+    position: relative;
+    min-height: 100vh;
+}
+
+.input-group-addon {
+    font-size: 13px;
+}
+
+

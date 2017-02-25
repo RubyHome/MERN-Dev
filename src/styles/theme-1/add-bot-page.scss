@@ -1,0 +1,60 @@
+.add-bot-page-comp {
+    padding: 80px 50px 30px 50px;
+    // display: flex;
+    // align-items: center;
+    // flex-direction: column;
+
+    .add-bot-section {
+        background: white;
+        border: 2px solid #e4e4e4;
+        max-width: 800px;
+        margin: 0 auto 30px auto;
+        padding: 30px;
+    }
+
+    .title {
+        letter-spacing: 4px;
+        font-weight: 100;
+        padding: 0 40px;
+        text-align: center;
+    }
+
+    .form {
+        max-width: 900px;
+        margin: 0 auto;
+
+        .inputs-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 20px 0;
+            padding: 0 50px;
+
+            label {
+                flex: 0 0 auto;
+                width: 300px;
+                font-size: 14px;
+                color: #6f6f6f;
+            }
+            .field {
+                flex: 1 0 auto;
+            }
+        }
+
+        .button-area {
+            display: flex;
+            justify-content: space-around;
+            padding: 50px;
+
+            .button {
+                margin: 0 10px;
+            }
+        }
+        .messages {
+            margin: 50px 0 0 0;
+            .success {
+                color: rgb(39, 197, 39);
+            }
+        }
+    }
+}
